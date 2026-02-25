@@ -1,7 +1,38 @@
 ---
----  // required front matter
+---  // ← These two lines are REQUIRED (front matter) — do NOT remove them
+
+// Import the current theme's styles first
 @import "{{ site.theme }}";
 
-// Your custom CSS here
-body { background: #0f0f0f; color: #00ff00; }
-h1 { color: #00d4ff; }
+// Now add your custom overrides below
+body {
+  background: #0f0f0f !important;
+  color: #e0e0e0 !important;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+h1, h2 {
+  color: #00d4ff !important;
+}
+
+.container {
+  background: #1a1a1a !important;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+}
+
+a {
+  color: #00d4ff !important;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.last-updated {
+  color: #aaa !important;
+  font-style: italic;
+  text-align: right;
+}
